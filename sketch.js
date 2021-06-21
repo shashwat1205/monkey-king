@@ -51,6 +51,9 @@ function draw()
     monkey.collide(gro);
     if(gameState == "play" )
       {
+         camera.position.x = monkey.x;
+         camera.position.y = monkey.y;
+         
         survivalTime = survivalTime+1;
         if(ground_run.x < 0)
             {
